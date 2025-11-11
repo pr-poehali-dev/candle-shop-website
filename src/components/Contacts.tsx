@@ -114,9 +114,8 @@ export default function Contacts() {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full gap-2">
+                <Button type="submit" className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-white">
                   Отправить сообщение
-                  <Icon name="Send" size={18} />
                 </Button>
               </form>
             </CardContent>

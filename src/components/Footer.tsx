@@ -2,13 +2,13 @@ import Icon from '@/components/ui/icon';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary py-12 px-4">
+    <footer className="bg-muted py-12 px-4">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Icon name="Flame" size={24} className="text-primary" />
-              <h3 className="font-semibold text-lg">LumeElegance</h3>
+              <h3 className="font-semibold text-lg">CandleShop</h3>
             </div>
             <p className="text-sm text-muted-foreground">
               Handmade свечи с душой. Создаём атмосферу уюта в каждом доме.
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© 2024 LumeElegance. Все права защищены.</p>
+          <p>© 2024 CandleShop. Все права защищены.</p>
         </div>
       </div>
     </footer>

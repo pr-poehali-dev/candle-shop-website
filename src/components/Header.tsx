@@ -14,15 +14,15 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md">
+      <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div 
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => scrollToSection('home')}
           >
-            <Icon name="Flame" size={28} className="text-primary" />
-            <h1 className="text-2xl font-semibold">LumeElegance</h1>
+            <Icon name="Flame" size={32} className="text-primary" />
+            <h1 className="text-2xl font-bold">CandleShop</h1>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -32,7 +32,15 @@ export default function Header() {
                 activeSection === 'home' ? 'text-primary' : 'text-foreground'
               }`}
             >
-              Главная
+              О нас
+            </button>
+            <button
+              onClick={() => scrollToSection('benefits')}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                activeSection === 'benefits' ? 'text-primary' : 'text-foreground'
+              }`}
+            >
+              Преимущества
             </button>
             <button
               onClick={() => scrollToSection('catalog')}
@@ -52,9 +60,8 @@ export default function Header() {
             </button>
           </nav>
 
-          <Button variant="outline" size="sm" className="hidden md:flex items-center gap-2">
-            <Icon name="ShoppingBag" size={18} />
-            Корзина
+          <Button className="hidden md:flex bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+            Связаться
           </Button>
 
           <Button
